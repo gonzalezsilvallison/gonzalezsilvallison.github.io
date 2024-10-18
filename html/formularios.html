@@ -1,0 +1,232 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formularios</title>
+<link href="../css/estilo2.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+		form {
+			width: 50%;
+			height: auto;
+			padding: 30px;
+			background-color: darkorchid;
+			color: aliceblue;
+			margin: 0 auto;
+		}
+		label {
+			padding-bottom: 10px;
+			padding-top: 10px;
+		}
+		label,input{
+			display:block;
+			margin-left: 10px;
+			
+		} 
+		input[type=text],input[type=password]{
+			width: 100%;
+			color: darkorchid;
+			padding: 8px;
+			font-weight: bold;
+			border: 3px solid #B82BAF;
+			border-radius: 10px;
+			background-color:#ffb2c1;
+		}
+		input[type=submit]{
+			width: 30%;
+			background-color:hotpink;
+			padding: 10px;
+			margin: 20px auto;
+			border-radius: 10px;
+			color: #F680FD;
+			font-weight: bolder;
+		}
+		input [type=text]:focus, input[type=password]:focus{
+			background-color:#ffb2c1;
+			border: 3px solid #D42AC9;
+		}
+		input [type=text],input[type=number]{
+			width: 100%;
+			color: darkorchid;
+			padding: 8px;
+			font-weight: bold;
+			border: 3px solid #B82BAF;
+			border-radius: 10px;
+			background-color:#ffb2c1;
+		}
+		select{
+			width: 100%;
+			color: darkorchid;
+			padding: 8px;
+			font-weight: bold;
+			border: 3px solid #B82BAF;
+			border-radius: 10px;
+			background-color:#ffb2c1;
+		}
+	</style>
+</head>
+
+<body>
+<header>
+  <h1>FORMULARIOS EN HTML</h1>
+</header>
+<nav>
+	<ul>
+		<li><a href="../index.html">Inicio</a></li>
+		<li><a href="../html/listas.html">Listas</a></li>
+		<li><a href="../html/enlaces.html">Enlaces</a></li>
+		<li><a href="../html/imagenes.html">Imágenes</a></li>
+		<li><a href="../html/audio.html">Audio</a></li>
+		<li><a href="../html/video.html">Video</a></li>
+		<li><a href="../html/tablas.html">Tablas</a></li>
+		<li><a href="../html/formularios.html">Formularios</a></li>
+	</ul>
+</nav>
+<main>
+  <section>
+    <h2>Formulario Usuario 1&nbsp;</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta porro dolorum facilis ipsum deserunt error voluptate, laudantium accusamus. Consequatur quaerat necessitatibus, aperiam natus quos pariatur sapiente blanditiis, earum, ab repellendus voluptas deleniti minus harum? Voluptas amet odit libero voluptate ex iste recusandae suscipit blanditiis et placeat doloremque ducimus earum dolorum nulla, distinctio ad! Quia necessitatibus repellendus ad sed dolores sunt, ipsa eos expedita asperiores excepturi aperiam laborum minus perferendis, sequi obcaecati illum dolorum earum quaerat tempora assumenda quos, incidunt! Praesentium nihil nobis repellat dolore obcaecati explicabo, earum nemo aspernatur dignissimos, ut a distinctio? Cumque, id. Alias voluptas iste natus labore.</p>
+  </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima rerum odit voluptas, nulla autem totam perferendis, accusantium facilis nesciunt voluptatem dolore, quisquam iusto suscipit delectus aperiam quos maxime doloremque dolores nostrum sed incidunt distinctio. Cupiditate eos voluptatibus debitis fuga fugit laudantium tempore numquam perspiciatis aperiam, error, maxime accusamus eius amet. Asperiores reiciendis unde perspiciatis porro in saepe nemo laboriosam sit sint aut hic dolorum quos illo, inventore deleniti officia maxime doloremque ratione, iste dignissimos quae numquam eum assumenda natus! Perspiciatis velit sequi veritatis repellat, quisquam. Alias illo, nulla nemo sint reiciendis in repellendus, quos, commodi inventore eveniet harum maiores doloremque?</p>
+	  <form action="" method="get">
+		  <label id="">Nombre:</label>
+		  <input type="text" id="nombre" name="nombre">
+		  <label id=""> Contraseña:</label>
+		  <input type="password" id="contraseña" name="contraseña">
+		  <input type="submit" value="Enviar">
+	  </form>
+    </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae modi rerum quasi, iusto omnis laboriosam vero, libero provident doloribus harum eaque non adipisci placeat alias repellat minima eligendi distinctio ex accusantium voluptatum inventore porro neque. Temporibus impedit optio omnis, ratione hic voluptatibus. Unde adipisci dolore enim temporibus, nemo quis deleniti maxime recusandae sapiente et harum illo libero quas pariatur rerum quia culpa repellendus. Harum nostrum, corrupti provident obcaecati molestiae veniam ab, autem sint velit molestias rerum aperiam voluptates doloremque cum, distinctio unde natus minima doloribus pariatur sed ullam error officiis dolorem. Impedit voluptas, nisi id delectus doloremque saepe hic doloribus?</p>
+    <form id="form1" name="form1" method="get">
+<label for="nombre">Nombre:&nbsp;</label>
+      <input type="text" name="nombre" id="nombre">
+      <label for="number">Number:</label>
+      <input type="number" name="edad" id="edad" min="18" max="90">
+      <label for="select">Estado</label>
+      <select name="estado" id="estado">
+		  <option value="Aguascalientes">Aguscalientes</option>
+		   <option value="Colima">Colima</option>
+		   <option value="Durango">Durango</option>
+		   <option value="Jalisco">Jalisco</option>
+		   <option value="Nayarit">Nayarit</option>
+		   <option value="Puebla">Puebla</option>
+      </select>
+		 <input type="submit" value="Enviar">
+      
+    </form>
+    </section>
+  <section>
+    <h2>Este es el contenido de la etiqueta H2 de diseño</h2>
+    <p>	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia soluta blanditiis a placeat necessitatibus maxime, vitae, id iste asperiores tempore, facilis, provident sunt veritatis ipsam voluptatibus quasi voluptate? Ea voluptatum perferendis magnam, eaque, in voluptas blanditiis culpa eos voluptatem obcaecati veritatis. Molestiae qui architecto earum, ad voluptates itaque ab ea laboriosam aperiam, maiores, quos ut ex iure. Nostrum impedit recusandae repudiandae quaerat, alias assumenda neque unde inventore tenetur nemo itaque quasi, a totam sed. Inventore eveniet porro impedit pariatur perferendis iure accusantium sint ea, nobis enim sunt adipisci error ut explicabo minima non soluta repellendus ex repellat, aut, architecto. Dolores!</p>
+    <form id="form2" name="form2" method="post">
+    
+    <label for="textfield">Nombre:</label>
+    <input type="text" name="nombre" id="textfield">
+    
+    <label for="genero">Género</label>
+    <table>
+      <tr>
+        <td style="text-align:center"><input type="radio" name="Genero" value="Fem" id="Genero_0"></td>
+        <td><label for="Genero_0">Femenino</label></td>
+      </tr>
+      <tr>
+        <td style="text-align:center"><input type="radio" name="Genero" value="Mas" id="Genero_1"></td>
+        <td><label for="Genero_1">Masculino</label></td>
+      </tr>
+      <tr>
+        <td style="text-align:center"><input type="radio" name="Genero" value="other" id="Genero_2"></td>
+        <td><label for="Genero_2">Otro</label></td>
+      </tr>
+    </table>
+    
+    <label for="musica">¿Cuál es tu género de música favorito?</label>
+    <div class="checkbox-group">
+      <div>
+        <input type="checkbox" name="musica" value="clasica" id="musica_0">
+        <label for="musica_0">Clásica</label>
+      </div>
+      <div>
+        <input type="checkbox" name="musica" value="pop" id="musica_1">
+        <label for="musica_1">Pop</label>
+      </div>
+      <div>
+        <input type="checkbox" name="musica" value="rock" id="musica_2">
+        <label for="musica_2">Rock</label>
+      </div>
+      <div>
+        <input type="checkbox" name="musica" value="tropical" id="musica_3">
+        <label for="musica_3">Tropical</label>
+      </div>
+      <div>
+        <input type="checkbox" name="musica" value="jazz" id="musica_4">
+        <label for="musica_4">Jazz y Blues</label>
+      </div>
+    </div>
+
+    <input type="submit" value="Enviar">
+    
+  </form>
+    </section>
+	<section>
+  <h2>Entrevista a Keria - Jugador Profesional de T1 (League of Legends)</h2>
+  <form id="interview-form" method="post">
+
+    <!-- Pregunta 1 -->
+    <label for="nombre">1. ¿Cuál es tu nombre completo?</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <!-- Pregunta 2 -->
+    <label for="fecha-nacimiento">2. ¿Cuándo es tu fecha de nacimiento?</label>
+    <input type="date" id="fecha-nacimiento" name="fecha-nacimiento"><br><br>
+
+    <!-- Pregunta 3 -->
+    <label for="rol-preferido">3. ¿Cuál es tu rol preferido en League of Legends?</label>
+    <input type="radio" name="rol" value="Soporte" id="rol_soporte">
+    <label for="rol_soporte">Soporte</label>
+    <input type="radio" name="rol" value="ADC" id="rol_adc">
+    <label for="rol_adc">ADC</label><br><br>
+
+    <!-- Pregunta 4 -->
+    <label for="meta-color">4. ¿Cuál es tu color favorito?</label>
+    <input type="color" id="meta-color" name="meta-color"><br><br>
+
+    <!-- Pregunta 5 -->
+    <label for="meta-rango">5. ¿En qué rango consideras que te desempeñaste mejor esta temporada?</label>
+    <input type="range" id="meta-rango" name="meta-rango" min="1" max="10"><br><br>
+
+    <!-- Pregunta 6 -->
+    <label for="pregunta-file">6. ¿Puedes compartir una imagen que represente tu momento más épico en el Mundial?</label>
+    <input type="file" id="pregunta-file" name="pregunta-file"><br><br>
+
+    <!-- Pregunta 7 -->
+    <label for="correo">7. ¿Cómo pueden los fans contactarte? (Correo electrónico)</label>
+    <input type="email" id="correo" name="correo"><br><br>
+
+    <!-- Pregunta 8 -->
+    <label for="contraseña">8. ¿Cuál es el mayor desafío que enfrentas en tu preparación para un torneo? (Ingresa una contraseña para desbloquear la respuesta)</label>
+    <input type="password" id="contraseña" name="contraseña"><br><br>
+
+    <!-- Pregunta 9 -->
+    <label for="num-horas">9. ¿Cuántas horas diarias dedicas al entrenamiento?</label>
+    <input type="number" id="num-horas" name="num-horas" min="1" max="24"><br><br>
+
+    <!-- Pregunta 10 -->
+    <label for="redes">10. ¿Te gustaría compartir alguna de tus redes sociales?</label>
+    <input type="url" id="redes" name="redes" placeholder="https://"><br><br>
+
+    <!-- Enviar formulario -->
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Reiniciar formulario">
+
+  </form>
+</section>
+
+</main>
+<footer>
+  <h5>Elaborado por Allison Gonzàlez&nbsp;&nbsp;</h5>
+</footer>
+</body>
+</html>

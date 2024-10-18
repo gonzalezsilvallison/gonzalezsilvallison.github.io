@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>VIDEO</title>
+	<link rel="stylesheet" href="../css/estilo2.css" type="text/css">
+	<style type="text/css">
+		header, nav, main, footer {
+			width: 100%;
+		}
+		video {
+			display: block;
+			margin: 0 auto;
+			width: 100%;
+			height: auto;
+		}
+		main {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: flex-start;
+			gap: 20px;
+		}
+		section {
+			flex: 1 1 30%;
+			box-sizing: border-box;
+			padding: 10px;
+			border: 1px solid #ccc;
+			margin: 10px;
+			max-width: 400px; /* Ajustar el tamaño máximo de las cajas */
+			min-width: 250px; /* Para evitar que las cajas sean muy pequeñas */
+		}
+		#poster {
+			width: 100%;
+			height: auto;
+		}
+		footer {
+			text-align: center;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Videos en HTML</h1>
+	</header>
+	<nav>
+		<ul>
+		<li><a href="../index.html">Inicio</a></li>
+		<li><a href="../html/listas.html">Listas</a></li>
+		<li><a href="../html/enlaces.html">Enlaces</a></li>
+		<li><a href="../html/imagenes.html">Imágenes</a></li>
+		<li><a href="../html/audio.html">Audio</a></li>
+		<li><a href="../html/video.html">Video</a></li>
+		<li><a href="../html/tablas.html">Tablas</a></li>
+		<li><a href="../html/formularios.html">Formularios</a></li>
+	</ul>
+	</nav>
+	<main>
+		<section>
+			<h2>Video</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+			<video autoplay loop muted>
+				<source src="../videos/video1.mp4" type="video/mp4"> 
+				El navegador no soporta tu video
+			</video>
+		</section>
+		
+		<section>
+			<h2>Video</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+			<video controls autoplay muted>
+				<source src="../videos/video2.mp4" type="video/mp4"> 
+				El navegador no soporta tu video
+			</video>
+		</section>
+		
+		<section id="section3">
+			<h2>Video</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+			<video id="poster" controls poster="imagenes/poster.png">
+				<source src="../videos/video1.mp4" type="video/mp4"> 
+				El navegador no soporta tu video
+			</video>
+		</section>
+		
+		<section>
+			<h2>Video</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/CLCJaiyjKkc?si=O8-bX3FGD0GG-kgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</section>
+		
+		<section>
+			<h2>Video</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+			<iframe width="100%" height="315" src="https://www.pexels.com/video/13600132/embed" allowfullscreen></iframe>
+				
+				
+		</section>
+	</main>
+	<footer>
+		<h5>Elaborado por Allison González</h5>
+	</footer>
+</body>
+</html>
+

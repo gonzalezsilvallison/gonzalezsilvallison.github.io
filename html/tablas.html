@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>TABLAS EN HTML</title>
+	 <link rel="stylesheet" href="../css/estilo2.css" type="text/css">
+	<style type="text/css">
+		#tabla1 {
+			width: 80%;
+			height: 
+			text-align: center;
+			margin: 0 auto;
+			color:#f7f1e1;
+			border-style: solid;
+			border-color: crimson;
+			border-width: 5px;
+			border-spacing: 10px;
+				
+		}
+		#tabla1 th {
+		background-color: #855e6e
+		}
+		
+		#tabla1 td {
+			background-color: pink;
+			color: blueviolet;
+			text-align: left;
+			border-radius: 5px;
+			margin: 10px;
+			border-style: solid;
+			border-color: palevioletred;
+			border-top-width: 3px;
+		}
+		
+		#tabla2 {
+			color:aliceblue;
+		}
+		#tabla2 td {
+			color:aliceblue;
+			height: 30px;
+			padding: 5px;
+			
+		}
+		#celdacentrada {
+			text-align: center;
+			padding: 0px;
+			background-color:mediumpurple;
+		}
+		
+		.tabla2 {
+			width: 600px;
+			border-collapse: collapse;
+			border-color: palevioletred;
+			color:aliceblue;
+			border-style: solid;
+			margin: 0 auto;
+		}
+		
+		.tabla2 td {
+			width: 150px;
+			border-color: palevioletred;
+			color:aliceblue;
+			padding: 10px;
+			border-style: dashed;
+		}
+		
+		.tabla2 th {
+			background-color: blueviolet;
+		}
+		
+		.tabla2 td {
+			background-color: violet;
+		}
+		#tablazebra {
+			width: 100%;
+			
+		}
+		#tablazebra tbody tr:nth-child(even){
+			background-color:lightcyan;
+		}
+		#tablazebra tbody tr:nth-child(odd){
+			background-color:aliceblue;
+		}
+		#tablazebra thead tr {
+			background-color: white;
+		}
+		.tablahover {
+			width: 100%;
+			
+		}
+		
+		.tablahover thead tr {
+			background-color: beige;
+		}
+		.tablahover tbody tr:nth-child(even){
+			background-color:paleturquoise;
+		}
+		.tablahover tbody tr:nth-child(odd){
+			background-color:navajowhite;
+		}
+		.tablahover  tbody :hover {
+			background-color:aqua;
+			
+	</style>
+</head>
+
+<body>
+	<header>
+	<h1>TABLAS EN HTML</h1>
+	</header>
+	<nav>
+		<ol>
+			<nav>
+   <ul>
+		<li><a href="../index.html">Inicio</a></li>
+		<li><a href="../html/listas.html">Listas</a></li>
+		<li><a href="../html/enlaces.html">Enlaces</a></li>
+		<li><a href="../html/imagenes.html">Imágenes</a></li>
+		<li><a href="../html/audio.html">Audio</a></li>
+		<li><a href="../html/video.html">Video</a></li>
+		<li><a href="../html/tablas.html">Tablas</a></li>
+		<li><a href="../html/formularios.html">Formularios</a></li>
+	</ul>
+</nav>
+
+		</ol>
+	</nav>
+	<main>
+		<section style="overflow-x: auto">
+			<h2>Tablas</h2>
+			<p>Nullam a metus at sem euismod vestibulum. Phasellus vel maximus orci, ut finibus est. Sed malesuada mollis libero, eu tincidunt mauris tristique in. Fusce porttitor erat eget felis mollis, a porta quam vulputate. Nulla dapibus vehicula diam, ac sollicitudin mi condimentum eget. In a magna elementum, volutpat felis non, malesuada eros. Nullam fermentum eleifend lacus sit amet bibendum. Donec ac lacus non ex lacinia tempor. Donec quam tortor, volutpat sollicitudin lobortis eu, interdum sit amet nunc. Duis at sollicitudin nulla. Etiam consequat varius erat. Maecenas vitae suscipit augue. Nam gravida rutrum augue et finibus. Curabitur nec blandit dui. </p>
+			<table border="1" id="tabla1">
+				<thead>
+					<tr>
+						<th>Matricula</th>
+						<th>Nombre</th>
+						<th>Apellido Paterno</th>
+						<th>Apellido Materno</th>
+						<th>Colegio</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>20216778</td>
+						<td>Allison</td>
+						<td>Silva</td>
+						<td>Gonzalez</td>
+						<td>Arquitectura</td>
+					</tr>
+					<tr>
+						<td>20216788</td>
+						<td>Alondra</td>
+						<td>Baez</td>
+						<td>Cortes</td>
+						<td>Arquitectura</td>
+					</tr>
+					<tr>
+						<td>20216288</td>
+						<td>Alisa</td>
+						<td>Dominguez</td>
+						<td>Estrada</td>
+						<td>Arquitectura</td>
+					</tr>
+					<tr>
+						<td>20116788</td>
+						<td>Maria</td>
+						<td>Diaz</td>
+						<td>Perez</td>
+						<td>Urbano</td>
+					</tr>
+					<tr>
+						<td>20226588</td>
+						<td>Marian</td>
+						<td>Lopez</td>
+						<td>Cortes</td>
+						<td>Arquitectura</td>
+					</tr>
+					<tr>
+						<td>20216778</td>
+						<td>Alejandro</td>
+						<td>Blas</td>
+						<td>Muñoz</td>
+						<td>Urbano</td>
+					</tr>
+				</tbody>
+				<tfoot></tfoot>
+			</table>
+			
+		</section>
+		
+		<section style="overflow-x: auto">
+			
+		
+		<h2>Tablas</h2>
+		<p>Nullam a metus at sem euismod vestibulum. Phasellus vel maximus orci, ut finibus est. Sed malesuada mollis libero, eu tincidunt mauris tristique in. Fusce porttitor erat eget felis mollis, a porta quam vulputate. Nulla dapibus vehicula diam, ac sollicitudin mi condimentum eget. In a magna elementum, volutpat felis non, malesuada eros. Nullam fermentum eleifend lacus sit amet bibendum. Donec ac lacus non ex lacinia tempor. Donec quam tortor, volutpat sollicitudin lobortis eu, interdum sit amet nunc. Duis at sollicitudin nulla. Etiam consequat varius erat. Maecenas vitae suscipit augue. Nam gravida rutrum augue et finibus. Curabitur nec blandit dui.
+		</p>
+		<table id="tabla2" class="tabla2">
+		<thead>
+			<tr>
+				<th style="width: 200px;">Nombre</th>
+				<th style="width: 100px;">Edad</th>
+				<th style="width: 200px;" colspan="2">Telefono</th>
+				<th style="width: 100px;">Cooperaciòn</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+				<td>Georgina Lopez Mendoza</td>
+				<td style="text-align: center; padding: 0px;">15</td>
+				<td>22221345678</td>
+					<td>2221345678</td>
+				<td  class="celdacentrada" style="text-align: center;
+			padding: 0px;
+			background-color:mediumpurple;">100</td>
+				
+			</tr>
+				<tr>
+				<td>Juan Perez Lopez</td>
+				<td style="text-align: center; padding: 0px;">14</td>
+				<td>2221345678</td>
+					<td>2221345678</td>
+				<td class="celdacentrada" style="text-align: center;
+			padding: 0px;
+			background-color:mediumpurple;">50</td>
+				
+			</tr>
+				<tr>
+				<td>Maria Carmen Hernandez</td>
+				<td style="text-align: center; padding: 0px;" >13</td>
+				<td>2221567845</td>
+					<td>2221345678</td>
+				<td class="celdacentrada" style="text-align: center;
+			padding: 0px;
+			background-color:mediumpurple;">150</td>
+				
+			</tr>
+				<tr>
+				<td>Felipe Soto Lopez</td>
+				<td style="text-align: center; padding: 0px;">14</td>
+				<td>2226541232</td>
+					<td>2221345678</td>
+				<td class="celdacentrada" style="text-align: center;
+			padding: 0px;
+			background-color:mediumpurple;">80</td>
+				
+			
+				</tr>
+				<tr>
+				<td>Angel Aquilar Cadena</td>
+				<td style="text-align: center; padding: 0px;" >16</td>
+				<td>222654422</td>
+					<td>2221345678</td>
+				<td class="celdacentrada" style="text-align: center;
+			padding: 0px;
+			background-color:mediumpurple;">100</td>
+				
+			</tr>
+			</tbody>
+			
+			<tfoot>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>TOTAL</td>
+					<td class="celdacentrada" style="background-color: blueviolet; color: aqua;" >480</td>
+				</tr>
+			</tfoot>
+		</table>
+		</section>
+		<section style="overflow-x: auto">
+			<h2>Tablas</h2>
+			<p>
+				Nullam a metus at sem euismod vestibulum. Phasellus vel maximus orci, ut finibus est. Sed malesuada mollis libero, eu tincidunt mauris tristique in. Fusce porttitor erat eget felis mollis, a porta quam vulputate. Nulla dapibus vehicula diam, ac sollicitudin mi condimentum eget. In a magna elementum, volutpat felis non, malesuada eros. Nullam fermentum eleifend lacus sit amet bibendum. Donec ac lacus non ex lacinia tempor. Donec quam tortor, volutpat sollicitudin lobortis eu, interdum sit amet nunc. Duis at sollicitudin nulla. Etiam consequat varius erat. Maecenas vitae suscipit augue. Nam gravida rutrum augue et finibus. Curabitur nec blandit dui.
+			</p>
+			 <table id="tablazebra">
+				 <thead>
+					 <tr>
+						 <th>Nombre</th>
+						 <th>Edad</th>
+						 <th>Telefono</th>
+						 <th>Deporte</th>
+						 <th>Email</th>
+					 </tr>
+				 </thead>
+				 <tbody>
+					 <tr>
+						 <td>Lourdez diaz salamca</td>
+						  <td>19</td>
+						  <td>22355678</td>
+						  <td>Basquetbol</td>
+						  <td>lulu19@gmail.com</td>
+					 </tr>
+					 <tr>
+						 <td>Santiago Perez Lopez</td>
+						  <td>18</td>
+						  <td>223565455</td>
+						  <td>Futbol</td>
+						  <td>lopez12@gmail.com</td>
+					 </tr>
+					 <tr>
+						 <td>Emiliamo Martinez Saez</td>
+						  <td>18</td>
+						  <td>222111233</td>
+						  <td>Voleybol</td>
+						  <td>dibu@gmail.com</td>
+					 </tr>
+					 <tr>
+						 <td>Antonio Marquez Solis</td>
+						  <td>19</td>
+						  <td>243107025</td>
+						  <td>Futbol</td>
+						  <td>antony@gmail.com</td>
+					 </tr>
+					 <tr>
+						 <td>Alondra Ruiz Martinez</td>
+						  <td>18</td>
+						  <td>23156788</td>
+						  <td>Futbol</td>
+						  <td>alo877@gmail.com</td>
+					 </tr>
+					  <tr>
+						 <td>Maria Ruiz Lopez</td>
+						  <td>19</td>
+						  <td>243155788</td>
+						  <td>Natacion</td>
+						  <td>miri@gmail.com</td>
+					 </tr>
+					  <tr>
+						 <td>Alondra Ruiz Martinez</td>
+						  <td>18</td>
+						  <td>243156788</td>
+						  <td>Futbol</td>
+						  <td>loli2@gmail.com</td>
+					 </tr>
+				 </tbody>
+				 <tfoot></tfoot>
+			</table>
+		</section>
+		<section style="overflow-x: auto">
+			<h2>Tablas</h2>
+			<p>
+				Nullam a metus at sem euismod vestibulum. Phasellus vel maximus orci, ut finibus est. Sed malesuada mollis libero, eu tincidunt mauris tristique in. Fusce porttitor erat eget felis mollis, a porta quam vulputate. Nulla dapibus vehicula diam, ac sollicitudin mi condimentum eget. In a magna elementum, volutpat felis non, malesuada eros. Nullam fermentum eleifend lacus sit amet bibendum. Donec ac lacus non ex lacinia tempor. Donec quam tortor, volutpat sollicitudin lobortis eu, interdum sit amet nunc. Duis at sollicitudin nulla. Etiam consequat varius erat. Maecenas vitae suscipit augue. Nam gravida rutrum augue et finibus. Curabitur nec blandit dui.
+			</p>
+			 <table id="" class="tablahover">
+				 <thead>
+					 <tr>
+						 <th>Nombre</th>
+						 <th>Edad</th>
+						 <th>Telefono</th>
+						 <th>Deporte</th>
+						 <th>Email</th>
+					 </tr>
+				 </thead>
+				 <tbody>
+					 <tr>
+						 <td>Lourdez diaz salamca</td>
+						  <td>19</td>
+						  <td>22355678</td>
+						  <td>Basquetbol</td>
+						  <td>lulu19@gmail.com</td>
+					 </tr>
+					 <tr>
+						 <td>Santiago Perez Lopez</td>
+						  <td>18</td>
+						  <td>223565455</td>
+						  <td>Futbol</td>
+						  <td>lopez12@gmail.com</td>
+					 </tr>
+					 <tr>
+						 <td>Emiliamo Martinez Saez</td>
+						  <td>18</td>
+						  <td>222111233</td>
+						  <td>Voleybol</td>
+						  <td>dibu@gmail.com</td>
+					 </tr>
+					 <tr>
+						 <td>Antonio Marquez Solis</td>
+						  <td>19</td>
+						  <td>243107025</td>
+						  <td>Futbol</td>
+						  <td>antony@gmail.com</td>
+					 </tr>
+					 <tr>
+						 <td>Alondra Ruiz Martinez</td>
+						  <td>18</td>
+						  <td>23156788</td>
+						  <td>Futbol</td>
+						  <td>alo877@gmail.com</td>
+					 </tr>
+					  <tr>
+						 <td>Maria Ruiz Lopez</td>
+						  <td>19</td>
+						  <td>243155788</td>
+						  <td>Natacion</td>
+						  <td>miri@gmail.com</td>
+					 </tr>
+					  <tr>
+						 <td>Alondra Ruiz Martinez</td>
+						  <td>18</td>
+						  <td>243156788</td>
+						  <td>Futbol</td>
+						  <td>loli2@gmail.com</td>
+					 </tr>
+				 </tbody>
+				 <tfoot></tfoot>
+			</table>
+		</section>
+	</main>
+	
+	<footer>
+		<h5>Elaborado por Allison Gonzalez</h5>
+	</footer>
+</body>
+</html>
